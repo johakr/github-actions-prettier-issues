@@ -22,6 +22,11 @@ jobs:
           prettier_options: --write **/*.{js,json,css}
           # Running the script in dry mode just shows whether there are files that should be prettified or not
           dry: true # optional
+      - uses: lee-dohm/close-matching-issues@v2
+        if: ${{ success() }}
+        with:
+          query: 'label:prettier assignee:${{github.actor}}'
+          token: ${{ secrets.GITHUB_TOKEN }}  
       - uses: JasonEtco/create-an-issue@v2
         if: ${{ failure() }}
         with:
