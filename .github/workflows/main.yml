@@ -19,7 +19,7 @@ jobs:
           # File pattern used for `git add`
           #file_pattern: # optional, default is *
           # Options for the `prettier` command
-          prettier_options: --check **/*.{js,json,md,css}
+          prettier_options: --write **/*.{js,json,md,css}
           # Running the script in dry mode just shows whether there are files that should be prettified or not
           dry: true # optional
       - uses: JasonEtco/create-an-issue@v2
