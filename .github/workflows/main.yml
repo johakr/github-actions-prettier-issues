@@ -23,6 +23,7 @@ jobs:
           # Running the script in dry mode just shows whether there are files that should be prettified or not
           dry: true # optional
       - uses: JasonEtco/create-an-issue@v2
+        if: ${{ failure() }}
         with:
           assignees: ${{github.actor}}
         env:
