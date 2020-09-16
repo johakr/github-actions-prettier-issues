@@ -21,7 +21,7 @@ jobs:
           # Options for the `prettier` command
           prettier_options: --check **/*.{js,json,md,css}
           # Running the script in dry mode just shows whether there are files that should be prettified or not
-          #dry: true # optional
+          dry: true # optional
       - uses: JasonEtco/create-an-issue@v2
         with:
           assignees: ${{github.actor}}
