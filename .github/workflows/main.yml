@@ -22,8 +22,8 @@ jobs:
           #prettier_options: # optional, default is --write **/*.js
           # Running the script in dry mode just shows whether there are files that should be prettified or not
           dry: true # optional
-          # Specific version of prettier (by default just use the latest version)
-          # prettier_version: # optional
       - uses: JasonEtco/create-an-issue@v2
+        with:
+          assignees: ${{github.actor}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
