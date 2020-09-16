@@ -1,4 +1,4 @@
-name: Greet Everyone
+name: Check Prettier
 # This workflow is triggered on pushes to the repository.
 on: [push]
 
@@ -24,3 +24,6 @@ jobs:
           dry: true # optional
           # Specific version of prettier (by default just use the latest version)
           # prettier_version: # optional
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
