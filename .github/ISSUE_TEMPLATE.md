@@ -1,5 +1,5 @@
 ---
-title: :art: :rotating_light: prettier alert
+title: ":art: :rotating_light: prettier alert"
 labels: prettier
 ---
 Hi {{ payload.sender.login }},
