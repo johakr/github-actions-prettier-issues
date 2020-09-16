@@ -8,4 +8,4 @@ Hi {{ payload.sender.login }},
 
 Please double-check that you have prettier installed and vscode configured as described in the encounter notes. 
 
-This issue will be closed automatically as soon as you push pretty code. :)
+This issue will be closed automatically as soon as you push pretty code. :see_no_evil:
