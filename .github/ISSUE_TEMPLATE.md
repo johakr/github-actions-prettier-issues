@@ -4,8 +4,8 @@ labels: prettier
 ---
 Hi {{ payload.sender.login }},
 
-***prettier* found at least one unpretty file within your codebase.**
+***prettier* found at least one unpretty file within your last commit.**
 
-Please double-check that you have prettier installed and vscode configured as described in the encounter notes. 
+Please double-check that you have *prettier* installed and *vscode* configured as described in the encounter notes. 
 
 This issue will be closed automatically as soon as you push pretty code. :see_no_evil:
