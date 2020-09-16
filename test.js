@@ -1,3 +1,3 @@
 function log() {
-    console.log("pretty");
+        console.log("pretty");
 }
