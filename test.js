@@ -1,3 +1,3 @@
-function() {
+function log() {
       console.log("");
 }
